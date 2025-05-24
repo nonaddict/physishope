@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+     padding-top: 3rem;
+}
+
+nav{
+    width: 100vw;
+    margin-top: -3rem;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    display:grid;
+    grid-template-columns: 70vw repeat(5,7rem);
+    padding:1.5rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+a>img{
+  margin-left: 2.5rem;
+  width:1.7rem;
+}
+a{
+    text-decoration: none;
+    color:rgb(46, 45, 45);
+    font-family: Raleway;
+    font-size: 1em;
+}
+
+.heading{
+    color: #0074D9;
+    size:2rem;
+}
+main{
+    font-family: Raleway;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.footer {
+  background-color: white;
+  border-top: 1px solid #e5e7eb; /* light gray */
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.875rem; /* 14px */
+  color: #6b7280; /* gray-500 */
+  margin-top:50vh;
+}
+
+.footer-text {
+  margin-bottom: 0.5rem;
+}
+
+.footer-ebay {
+  font-weight: bold;
+  color: #2563eb; /* blue-600 */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6b7280;
+  transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+     padding-top: 3rem;
+}
+
+a>img{
+  margin-left: 2.5rem;
+  width:1.7rem;
+}
+
+nav{
+    width: 100vw;
+    margin-top: -3rem;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    display:grid;
+    grid-template-columns: 70vw repeat(5,7rem);
+    padding:1.5rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+a{
+    text-decoration: none;
+    color:rgb(46, 45, 45);
+    font-family: Raleway;
+    font-size: 1em;
+}
+
+.heading{
+    color: #0074D9;
+    size:2rem;
+}
+
+.hero{
+    z-index: -1;
+    display:grid;
+    grid-template-columns: 50vw;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.hero-header{
+    justify-self: center;
+    font-size:3rem;
+    margin-bottom: 1rem;
+}
+.ebay-logo{
+    margin-top: 1vh;
+    justify-self: center; 
+}
+
+#logo{
+    width: 3rem;
+}
+
+.explore-button{
+    width:10vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    justify-self: center;
+    background-color: #0074D9;
+    color:white;
+    border:none;
+    font-size:1.05em;
+    cursor: pointer;
+}
+
+.samples{
+    margin-top: 8vw;
+    display:grid;
+    grid-template-columns: 100vw;
+}
+
+.sub-header{
+    justify-self: center;
+}
+
+.sample-products {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 1rem; /* Adds consistent spacing */
+    margin: 2vh 5vw;
+    padding-top: 2vh; /* Optional: separates from the navbar if needed */
+    z-index: 1; /* Keeps it in normal stacking context */
+}
+
+.product-card {
+    box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.15);
+    margin: 0.2vw;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.3s ease;
+    width:12vw;
+    padding:1em;
+    animation-name: slow;
+    animation-iteration-count: infinite;
+    animation-duration:  5s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+/* #first-product{
+
+}
+#fifth-product{
+
+}
+#fourth-product{}
+#second-product{}
+#third-product{}
+#sixth-product{} */
+@keyframes slow{
+     0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.product-card:hover {
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.25);
+    transform: scale(1.02);
+}
+
+article > img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+article>p,article>a{
+    color:#0074D9;
+}
+.footer {
+  background-color: white;
+  border-top: 1px solid #e5e7eb; /* light gray */
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.875rem; /* 14px */
+  color: #6b7280; /* gray-500 */
+  margin-top: 2.5rem;
+}
+
+.footer-text {
+  margin-bottom: 0.5rem;
+}
+
+.footer-ebay {
+  font-weight: bold;
+  color: #2563eb; /* blue-600 */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6b7280;
+  transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

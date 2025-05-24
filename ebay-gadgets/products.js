@@ -1,7 +1,7 @@
 // products.js
 const products = async () => {
   try {
-    const response = await fetch('https://backend-q7ou.onrender.com/ebay-gadgets/products', {
+    const response = await fetch('https://sql-backend-production-6b3b.up.railway.app/get-all-products/ebay_gadgets', {
       method: 'GET',
       mode: 'cors'
     });
