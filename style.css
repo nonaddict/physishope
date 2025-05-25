@@ -74,6 +74,10 @@ a{
     cursor: pointer;
 }
 
+#replacement{
+  display:none;
+}
+
 .samples{
     margin-top: 8vw;
     display:grid;
@@ -109,16 +113,7 @@ a{
     animation-direction: alternate;
     animation-timing-function: linear;
 }
-/* #first-product{
 
-}
-#fifth-product{
-
-}
-#fourth-product{}
-#second-product{}
-#third-product{}
-#sixth-product{} */
 @keyframes slow{
      0% {
     transform: translateX(100%);
@@ -175,4 +170,135 @@ article>p,article>a{
 
 .footer-links a:hover {
   text-decoration: underline;
+}
+
+
+
+@media (max-width: 480px) {
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+     padding-top: 3rem;
+}
+
+a>img{
+  margin-left: 2.5rem;
+  width:1.7rem;
+}
+
+nav{
+    width: 100vw;
+    margin-top: -3rem;
+    z-index: 1;
+    background-color: white;
+    position: fixed;
+    display:grid;
+    grid-template-columns:70vw 20vw;
+    padding:1.5rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.nav-component{
+  display:none;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(46, 45, 45);
+    font-family: Raleway;
+    font-size: 1em;
+}
+
+.heading{
+    color: #0074D9;
+    size:2rem;
+}
+
+.hero{
+    z-index: -1;
+    display:grid;
+    grid-template-columns: 50vw;
+    justify-content: center;
+    margin-top: 12vh;
+}
+
+.hero-header{
+    justify-self: center;
+    align-self: center;
+    font-size:23.5px;
+    margin-bottom: 1rem;
+}
+.ebay-logo{
+    margin-top: 1vh;
+    justify-self: center; 
+    width:160px;
+}
+.sub-header{
+  font-size: 14px;
+}
+.explore-button{
+    width:180px;
+    height: 50px;
+    border-radius: 10px;
+    justify-self: center;
+    background-color: #0074D9;
+    color:white;
+    border:none;
+    font-size:15px;
+    cursor: pointer;
+}
+
+.samples{
+  display:none;
+}
+
+#replacement{
+  width:85vw;
+  margin-top:70px;
+  justify-self: center;
+  display:block;
+}
+
+.footer {
+  background-color: white;
+  border-top: 1px solid #e5e7eb; /* light gray */
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.875rem; /* 14px */
+  color: #6b7280; /* gray-500 */
+  margin-top: 15vh;
+}
+
+.footer-text {
+  margin-bottom: 0.5rem;
+}
+
+.footer-ebay {
+  font-weight: bold;
+  color: #2563eb; /* blue-600 */
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #6b7280;
+  transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
 }
