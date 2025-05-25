@@ -18,7 +18,7 @@ nav{
     background-color: white;
     position: fixed;
     display:grid;
-    grid-template-columns: 70vw repeat(5,7rem);
+    grid-template-columns: 70vw repeat(1,7rem);
     padding:1.5rem;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
