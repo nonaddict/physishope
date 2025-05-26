@@ -15,19 +15,16 @@ for(let i = 0;i<6;i++){
     image.setAttribute("src",element.image)
     image.setAttribute("alt",element.name)
 
-    const name=document.createElement("h3")
-    name.innerHTML=element.name;
-
     const price=document.createElement("p")
     price.innerHTML=element.price+"$";
 
     const link=document.createElement("a")
+    link.setAttribute("class","display-products-link")
     link.setAttribute("href",element.link)
     link.setAttribute("target","_blank")
     link.innerHTML="View on ebay"
 
     article.appendChild(image)
-    article.appendChild(name)
     article.appendChild(price)
     article.appendChild(link)
 

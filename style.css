@@ -22,10 +22,13 @@ nav{
     z-index: 1;
     background-color: white;
     position: fixed;
-    display:grid;
-    grid-template-columns: 70vw repeat(5,7rem);
+    display:flex;
     padding:1.5rem;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.nav-component{
+  width:100px;
 }
 
 a{
@@ -38,6 +41,7 @@ a{
 .heading{
     color: #0074D9;
     size:2rem;
+    width:75%;
 }
 
 .hero{
@@ -63,8 +67,7 @@ a{
 }
 
 .explore-button{
-    width:10vw;
-    height: 2.5vw;
+    width: 150px;;
     border-radius: 10px;
     justify-self: center;
     background-color: #0074D9;
@@ -98,6 +101,7 @@ a{
     z-index: 1; /* Keeps it in normal stacking context */
 }
 
+
 .product-card {
     box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.15);
     margin: 0.2vw;
@@ -112,6 +116,16 @@ a{
     animation-fill-mode: both;
     animation-direction: alternate;
     animation-timing-function: linear;
+}
+
+.product-card:first-child{
+  padding-top: 100px;
+}
+.product-card:nth-child(2){
+  padding-top: 100px;
+}
+.product-card:nth-child(3){
+  padding-top:50px;
 }
 
 @keyframes slow{

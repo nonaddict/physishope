@@ -17,11 +17,16 @@ nav{
     z-index: 1;
     background-color: white;
     position: fixed;
-    display:grid;
-    grid-template-columns: 70vw repeat(5,7rem);
+    display:flex;
     padding:1.5rem;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
+
+.nav-component{
+  width:100px;
+}
+
+
 a>img{
   margin-left: 2.5rem;
   width:1.7rem;
@@ -36,6 +41,7 @@ a{
 .heading{
     color: #0074D9;
     size:2rem;
+    width:75%;
 }
 main{
     font-family: Raleway;
