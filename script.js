@@ -13,6 +13,7 @@ for(let i = 0;i<6;i++){
 
     const image=document.createElement("img")
     image.setAttribute("src",element.image)
+    image.setAttribute("alt",element.name)
 
     const name=document.createElement("h3")
     name.innerHTML=element.name;
