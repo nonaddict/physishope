@@ -93,6 +93,8 @@ a{
 
 .sub-header{
     justify-self: center;
+    font-size: 1.5rem;
+
 }
 
 .sample-products {
@@ -304,7 +306,7 @@ article>p,article>a{
     .sub-phone-header{
     display:block;
     text-align: center;
-    font-size: 14px;
+    font-size: 1rem;
     margin:4%;
     }
     .explore-button{
