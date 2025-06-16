@@ -16,7 +16,7 @@ for(let i = 0;i<6;i++){
     image.setAttribute("alt",element.name)
 
     const price=document.createElement("p")
-    price.innerHTML=element.price+"$";
+    price.innerHTML="$"+element.price;
 
     const link=document.createElement("a")
     link.setAttribute("class","display-products-link")

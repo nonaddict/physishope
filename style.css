@@ -51,7 +51,9 @@ a{
     justify-content: center;
     margin-top: 10vh;
 }
-
+.sub-phone-header{
+    display:none;
+}
 .hero-header{
     justify-self: center;
     font-size:3rem;
@@ -256,6 +258,14 @@ a{
     width:160px;
 }
 .sub-header{
+  display:none;
+  
+}
+.sub-phone-header{
+  display:block;
+  margin-top: 10%;
+  width:80%;
+  justify-self:center;
   text-align: center;
   font-size: 14px;
 }

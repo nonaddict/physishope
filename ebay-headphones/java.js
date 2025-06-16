@@ -36,7 +36,7 @@ products()
           <img src="${productImage}" alt="${product.name}" />
           <div class="info">
             <div class="title">${product.name}</div>
-            <div class="price">${product.price}$</div>
+            <div class="price">$${product.price}</div>
             <a href="${product.link}" target="_blank">View Product</a>
           </div>
         `;
