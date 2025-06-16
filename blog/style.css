@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    color: #0074D9;
+    size:2rem;
+    width:75%;
+}
+
+details{
+    display:none;
+}
+.navigaiton-bar{
+    display:flex;
+    padding:1%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.header{
+    width:80%;
+}
+
+.nav-components{
+    display:flex;
+    justify-content: space-between;
+    gap:5%;
+}
+
+.nav-component{
+    text-decoration: none;
+    color:rgb(46, 45, 45);
+    font-family: Raleway;
+    font-size: 1em;
+}
+
+.main-header{
+    margin-top: 2%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.blog-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 4px solid #4f46e5;
+}
+
+.blog-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.blog-item a {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.blog-item p {
+    color: #555;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+footer{
+    text-align: center;
+    padding: 2rem;
+    color: #777;
+    font-size: 0.9rem;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #6b7280;
+    transition: text-decoration 0.2s;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px){
+    
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .header{
+        padding:2%;
+        color: #0074D9;
+        size:2rem;
+        width:75%;
+    }
+
+    nav{
+        width: 100%;
+        z-index: 1;
+        top:0;
+        background-color: white;
+        position: fixed;
+        display:grid;
+        grid-template-columns:70vw 20vw;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    }
+     a{
+        text-decoration: none;
+        color:rgb(46, 45, 45);
+        font-family: Raleway;
+        font-size: 1em;
+    }
+
+    .nav-component{
+        display:none;
+    }
+    details{
+        padding: 1%;
+        display:flex;
+        justify-self: end;
+        flex-direction: column;
+    }
+    summary{
+        transform: scale(1.3);
+        position: absolute;
+        top:20px;
+        right:20px;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+    display: none; /* remove triangle in Chrome, Safari */
+    }
+
+    ul>li{
+        list-style: none;
+        margin-top: 40%;
+        text-align: right;
+    }
+    ul{
+        height: 80svh;
+    }
+
+    .open{
+        border-left:solid;
+        border-bottom:solid;
+        border-width:1px;
+        width: 70%;
+        border-bottom-left-radius: 10px;
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        background-color: white;
+        padding: 10px;
+        z-index: 999;
+        box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.15);
+    }
+
+   .main-header{
+        margin-top: 20%;
+        text-align: center;
+        font-weight: lighter;
+   }
+
+   main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .blog-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .blog-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+      border-left: 4px solid #4f46e5;
+    }
+
+    .blog-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    }
+
+    .blog-item a {
+      text-decoration: none;
+      color: #111;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .blog-item p {
+      color: #555;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    footer{
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color: #6b7280;
+        transition: text-decoration 0.2s;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+}

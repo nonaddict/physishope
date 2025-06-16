@@ -16,7 +16,7 @@ for(let i = 0;i<6;i++){
     image.setAttribute("alt",element.name)
 
     const price=document.createElement("p")
-    price.innerHTML="$"+element.price;
+    price.innerHTML=element.price+"$";
 
     const link=document.createElement("a")
     link.setAttribute("class","display-products-link")
@@ -32,3 +32,10 @@ for(let i = 0;i<6;i++){
 }
 })
 .catch(err=>console.log(err))
+
+const details=document.querySelector("details")
+const summary=document.querySelector("summary")
+
+summary.addEventListener("click",()=>{
+    details.classList.toggle("open")
+})

@@ -1,0 +1,139 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+#header{
+    width:90%;
+}
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #0073e6;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+/* Blog post header */
+.blog-post-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-post-header p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.blog-post-header time {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Article content */
+article {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+article h2 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  color: #0073e6;
+}
+
+article p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+article ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+article li {
+  margin-bottom: 8px;
+}
+
+/* Call to Action Section */
+.blog-cta {
+  background: #e6f0ff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.blog-cta a {
+  color: #0073e6;
+  text-decoration: underline;
+}
+
+/* Recommended Products */
+.recommended-products {
+    margin-top: 40px;
+    padding: 20px;
+    background: #fffbea;
+    border-left: 5px solid #ffcc00;
+    border-radius: 5px;
+}
+.recommended-products ul {
+    margin-top: 10px;
+}
+.recommended-products li {
+    margin: 10px 0;
+}
+ a,.recommended-products a {
+      text-decoration: none;
+      color: #0066cc;
+      /* color:#666; */
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.footer-ebay {
+  font-weight: bold;
+  color: #e53238;
+}
+
+.footer nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0073e6;
+}
